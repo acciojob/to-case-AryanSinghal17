@@ -1,6 +1,6 @@
 function toCase(text) {
 
-	if(text.length == 0) return "";
+	if(text.length == 0) return "-";
     let s =  text.toLowerCase();
 	let e =  text.toUpperCase();
 	let ans = s + "-" + e;
