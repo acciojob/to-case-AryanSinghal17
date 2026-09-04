@@ -1,11 +1,10 @@
 function toCase(text) {
 
-	if(text.length == 0) return "-";
-    let s =  text.toLowerCase();
-	let e =  text.toUpperCase();
-	let ans = s + "-" + e;
-
-	return ans;
+	 if (!text || text.trim().length === 0) {
+        return "-";
+    }
+	
+    return text.toLowerCase() +"-" +toUpperCase();
 }
 // DO not change the code below
 
